@@ -1,0 +1,4 @@
+```
+export ROOT=$(nix derivation show .#devShell.aarch64-linux | jq -r 'keys[0]')
+sudo ln -s "${ROOT}" /nix/var/nix/gcroots/llvm17
+```
